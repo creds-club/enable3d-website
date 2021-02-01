@@ -50,9 +50,9 @@
           this.cloth.receiveShadow = true
           this.scene.add(this.cloth)
 
-          this.load.texture('assets/grid.png').then(texture => {
-            texture.wrapS = RepeatWrapping
-            texture.wrapT = RepeatWrapping
+          this.load.texture('/assets/img/grid.png').then(texture => {
+            texture.wrapS = THREE.RepeatWrapping
+            texture.wrapT = THREE.RepeatWrapping
             texture.repeat.set(clothNumSegmentsZ, clothNumSegmentsY)
             // @ts-ignore
             this.cloth.material.map = texture
